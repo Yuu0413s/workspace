@@ -2,7 +2,7 @@ const fetch = require('node-fetch'); // node-fetch v2 を使用
 const fs = require('fs');
 
 // APIのURL
-const url = 'https://api.syosetu.com/novelapi/api/?out=json&int=200&of=t-w-s';
+const url = 'https://api.syosetu.com/novelapi/api/?out=json&lim=200&of=t-w-s';
 
 fetch(url)
 .then(res => {
