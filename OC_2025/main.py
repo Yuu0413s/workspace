@@ -8,7 +8,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 model = SentenceTransformer("intfloat/multilingual-e5-small")
 
 # ✅ JSONファイルの読み込み
-with open("novel_info.json", "r", encoding="utf-8") as f:
+with open("OC_2025/novel_info.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # ✅ DataFrame化

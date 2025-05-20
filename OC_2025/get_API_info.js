@@ -11,7 +11,7 @@ fetch(url)
 })
 .then(data => {
     // JSONとして保存（日本語を正しく表示するために ensure_ascii: false 相当）
-    fs.writeFileSync('novel_info.json', JSON.stringify(data, null, 2), 'utf8');
+    fs.writeFileSync('OC_2025/novel_info.json', JSON.stringify(data, null, 2), 'utf8');
     console.log('✅ データを "novel_info.json" に保存しました。');
 })
 .catch(err => {
